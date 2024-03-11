@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="search">
+        <img src="image/Vector.png" alt="" />
+        <h1>Application météo</h1>
+      </div>
+
+      
+        
+        <form id="search-by-city" class="search" >
+          <input id="city-name" placeholder="Rechercher une ville..." type="text">
+          
+          <input type="image" src="image/Vector (1).png" class="btn" >
+        </form>
+     
+    </header>
+    <main class="hero">
+      <div id="card">
+        <div id="city-date">
+          <h3>Paris</h3>
+          <p id="date">00/00/00</p>
+        </div>
+        <div id="weather">
+          <img src="image/images/weatherIcons/01d@2x.png" alt="">
+          <p id="temp">20 °C</p>
+          <p id="weather-type">Ciel dégagé</p>
+        </div>
+        <div id="more-details">
+          <div id="wind">
+            <img src="image/images/card/wind.png" alt="">
+            <p>Vent :</p>
+            <p id="wind-value"></p>
+          </div>
+          <div id="precipitation">
+            <img src="image/images/card/rain.png" alt="">
+            <p>Précipitations :</p>
+            <p id="precipitation-value"></p>
+          </div>
+          <div id="humidity">
+            <img src="image/images/card/humidity.png" alt="">
+            <p>Humidité :</p>
+            <p id="humidity-value"></p>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+      
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="app.js"></script>
+    <script src="utils.js"></script>
+  </body>
+</html>
